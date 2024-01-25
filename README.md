@@ -16,6 +16,8 @@
 
 # Detect-Face
 
+This Python script utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and marks them with rectangles. The detected faces are saved in a specified output directory.
+
 <a href="https://cursed-entertainment.itch.io/" target="_blank">
     <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png"
         alt="CursedEntertainment Logo">
