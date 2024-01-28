@@ -15,8 +15,9 @@ You can install the required Python packages using pip:
 pip install -r requirements.txt
 ```
 
-[GloriosaAI Repository](https://github.com/CursedPrograms/GloriosaAI)
-[Gender-Age-ID Repository](https://github.com/CursedPrograms/Gender-Age-ID)
+- [GloriosaAI Repository](https://github.com/CursedPrograms/GloriosaAI)
+- [Gender-Age-ID Repository](https://github.com/CursedPrograms/Gender-Age-ID)
+- [Image-Generator](https://github.com/CursedPrograms/Image-Generator)
 
 <a href="https://cursed-entertainment.itch.io/" target="_blank">
     <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png"
