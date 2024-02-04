@@ -1,43 +1,53 @@
-import cv2
-from PIL import Image
 import os
-import glob
-import numpy as np  # Add this line
+import subprocess
 
-def detect_and_mark_faces(input_path, output_dir):
-    # Load the image using PIL to handle various image formats
-    image_pil = Image.open(input_path)
-    image = cv2.cvtColor(np.array(image_pil), cv2.COLOR_RGB2BGR)  # Use np for nump
+def main():
+    print("Python Project")
 
-    # Convert the image to grayscale
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    scripts = {
+        "1": {
+            "name": "Run 'image-detection.py'",
+            "description": "Detect a face in an image",
+            "file_name": "scripts/image-detection.py"
+        },
+        "2": {
+            "name": "Run 'feed-detection.py",
+            "description": "Detect a face in a webcam feed",
+            "file_name": "scripts/feed-detection.py"
+        },
+        "00": {
+            "name": "Run 'Install Dependencies'",
+            "description": "Install dependencies",
+            "file_name": "scripts/install_dependencies.py"
+        },
+    }
 
-    # Load the pre-trained face detector
-    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    current_script_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Detect faces in the image
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
-
-    # Draw rectangles around the faces
-    for (x, y, w, h) in faces:
-        cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
-
-    # Create an output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Save the marked image using PIL to handle various image formats
-    output_path = os.path.join(output_dir, f"marked_{os.path.basename(input_path)}")
-    marked_image_pil = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-    marked_image_pil.save(output_path)
-
-    print(f"Detected {len(faces)} face(s). Marked image saved to {output_path}")
+    while True:
+        print("\nAvailable Scripts:")
+        for key, script_info in scripts.items():
+            print(f"{key}: {script_info['name']} - {script_info['description']}")
+        
+        user_choice = input("Enter the number of the script you want to run (or 'q' to quit): ").strip()
+        
+        if user_choice == 'q':
+            break
+        
+        if user_choice in scripts:
+            selected_script = scripts[user_choice]
+            script_file_name = selected_script["file_name"]
+            script_file_path = os.path.join(current_script_dir, script_file_name)
+            
+            if os.path.exists(script_file_path):
+                try:
+                    subprocess.run(["python", script_file_path])
+                except Exception as e:
+                    print(f"An error occurred while running the script: {e}")
+            else:
+                print(f"Script file '{script_file_name}' does not exist.")
+        else:
+            print("Invalid choice. Please select a valid script number.")
 
 if __name__ == "__main__":
-    input_directory = "input/"
-    output_directory = "output/"
-
-    # Get a list of all image files in the input directory
-    image_files = glob.glob(os.path.join(input_directory, "*"))
-
-    for image_file in image_files:
-        detect_and_mark_faces(image_file, output_directory)
+    main()
