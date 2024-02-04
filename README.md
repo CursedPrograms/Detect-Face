@@ -8,7 +8,7 @@
 
 # Detect-Face
 
-This Python script utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and marks them with rectangles. The detected faces are saved in a specified output directory.
+This Python script utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and webcam feeds and marks them with rectangles. The detected faces are saved in a specified output directory.
 
 You can install the required Python packages using pip:
 ```bash
