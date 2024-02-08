@@ -33,8 +33,8 @@ def detect_and_mark_faces(input_path, output_dir):
     print(f"Detected {len(faces)} face(s). Marked image saved to {output_path}")
 
 if __name__ == "__main__":
-    input_directory = "../input/"
-    output_directory = "../output/"
+    input_directory = "./input/"
+    output_directory = "./output/"
 
     # Get a list of all image files in the input directory
     image_files = glob.glob(os.path.join(input_directory, "*"))
