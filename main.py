@@ -14,17 +14,17 @@ def main():
 
     scripts = {
         "1": {
-            "name": "Run 'image-detection.py'",
+            "name": "Run 'image_detection.py'",
             "description": "Detect a face in an image",
-            "file_name": "scripts/image-detection.py"
+            "file_name": "scripts/image_detection.py"
         },
         "2": {
-            "name": "Run 'feed-detection.py",
+            "name": "Run 'feed_detection.py",
             "description": "Detect a face in a webcam feed",
-            "file_name": "scripts/feed-detection.py"
+            "file_name": "scripts/feed_detection.py"
         },
         "00": {
-            "name": "Run 'Install Dependencies'",
+            "name": "Run 'install_dependencies.py'",
             "description": "Install dependencies",
             "file_name": "scripts/install_dependencies.py"
         },
