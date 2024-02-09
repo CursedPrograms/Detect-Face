@@ -1,4 +1,6 @@
 {
-    "input_directory": "./input/",
-    "output_directory": "./output/"
+    "directories": {
+        "input": "../input/",
+        "output": "../output/"
+    }
 }

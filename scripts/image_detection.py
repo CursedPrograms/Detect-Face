@@ -34,11 +34,14 @@ def detect_and_mark_faces(input_path, output_dir):
     print(f"Detected {len(faces)} face(s). Marked image saved to {output_path}")
 
 if __name__ == "__main__":
+
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+
     with open("settings.json", "r") as file:
         settings = json.load(file)
 
-    input_directory = settings["input_directory"]
-    output_directory = settings["output_directory"]
+    input_directory = os.path.join(script_directory, settings["directories"]["input"])
+    output_directory = os.path.join(script_directory, settings["directories"]["output"])
 
     # Get a list of all image files in the input directory
     image_files = glob.glob(os.path.join(input_directory, "*"))
