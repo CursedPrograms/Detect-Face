@@ -33,6 +33,7 @@ python main.py
 numpy
 opencv-python==4.8.1.78
 Pillow==8.3.2
+numpy==1.26.2
 ```
 - [GloriosaAI Repository](https://github.com/CursedPrograms/GloriosaAI)
 - [Gender-Age-ID Repository](https://github.com/CursedPrograms/Gender-Age-ID)
