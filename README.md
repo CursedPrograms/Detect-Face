@@ -27,7 +27,13 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+## Requirements
 
+```bash
+numpy
+opencv-python==4.8.1.78
+Pillow==8.3.2
+```
 - [GloriosaAI Repository](https://github.com/CursedPrograms/GloriosaAI)
 - [Gender-Age-ID Repository](https://github.com/CursedPrograms/Gender-Age-ID)
 - [Image-Generator Repository](https://github.com/CursedPrograms/Image-Generator)
