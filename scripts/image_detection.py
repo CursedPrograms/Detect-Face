@@ -2,7 +2,8 @@ import cv2
 from PIL import Image
 import os
 import glob
-import numpy as np  # Add this line
+import numpy as np 
+import json
 
 def detect_and_mark_faces(input_path, output_dir):
     # Load the image using PIL to handle various image formats
@@ -33,8 +34,11 @@ def detect_and_mark_faces(input_path, output_dir):
     print(f"Detected {len(faces)} face(s). Marked image saved to {output_path}")
 
 if __name__ == "__main__":
-    input_directory = "./input/"
-    output_directory = "./output/"
+    with open("settings.json", "r") as file:
+        settings = json.load(file)
+
+    input_directory = settings["input_directory"]
+    output_directory = settings["output_directory"]
 
     # Get a list of all image files in the input directory
     image_files = glob.glob(os.path.join(input_directory, "*"))
