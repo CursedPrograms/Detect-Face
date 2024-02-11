@@ -8,6 +8,11 @@
 
 # Detect-Face
 
+<a href="https://cursed-entertainment.itch.io/" target="_blank">
+    <img src="/demo_images/cover.png"
+        alt="CursedEntertainment Logo">
+</a>
+
 This project utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and webcam feeds, marking them with rectangles. The detected faces are saved in a specified output directory.
 
 ## Scripts:
