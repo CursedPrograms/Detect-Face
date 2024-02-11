@@ -12,9 +12,9 @@
     <img src="/demo_images/cover.png"
         alt="CursedEntertainment Logo">
 </a>
-
+<br>
 This project utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and webcam feeds, marking them with rectangles. The detected faces are saved in a specified output directory.
-
+<br>
 ## Scripts:
 
 - **main.py:** The selection menu for Detect-Face
@@ -45,7 +45,17 @@ numpy==1.26.2
 - [Image-Generator Repository](https://github.com/CursedPrograms/Image-Generator)
 - [Cursed GPT Repository](https://github.com/CursedPrograms/Cursed-GPT)
 
+<br>
+<div align="center">
+<a href="https://github.com/SynthWomb" target="_blank" align="center">
+    <img src="https://github.com/SynthWomb/SynthWomb/blob/main/logos/synthwomb07.png"
+        alt="SynthWomb" style="width:200px;"/>
+</a>
+</div>
+<br>
+<div align="center">
 <a href="https://cursed-entertainment.itch.io/" target="_blank">
     <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png"
-        alt="CursedEntertainment Logo">
+        alt="CursedEntertainment Logo" style="width:250px;">
 </a>
+</div>
