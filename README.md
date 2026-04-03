@@ -80,10 +80,13 @@ Unix-like systems (Linux/macOS):
 ## Requirements
 
 ```bash
-numpy
-opencv-python==4.8.1.78
-Pillow==8.3.2
-numpy==1.26.2
+Package       Version
+------------- --------
+numpy         1.26.2
+opencv-python 4.8.1.78
+Pillow        8.3.2
+pip           26.0.1
+
 ```
 - [GloriosaAI Repository](https://github.com/CursedPrograms/GloriosaAI)
 - [Gender-Age-ID Repository](https://github.com/CursedPrograms/Gender-Age-ID)
