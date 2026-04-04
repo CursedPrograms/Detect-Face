@@ -45,18 +45,12 @@ This project utilizes the OpenCV and Pillow (PIL) libraries to detect faces in i
 
 ## How to Run:
 
-### Install Requirements
-
-Using Python directly:
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
-Or run: 
-- `install_requirements.bat`
-
-  
-  <br>
 
 ### Run main.py
 
