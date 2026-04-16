@@ -119,9 +119,13 @@ Unix-like systems (Linux/macOS):
 <br>
 <div align="center">
 <a href="https://github.com/SynthWomb" target="_blank" align="center">
-    <img src="https://github.com/SynthWomb/SynthWomb/blob/main/logos/synthwomb07.png"
+    <img src="https://github.com/SynthWomb/synth.womb/blob/main/logos/synthwomb07.png"
         alt="SynthWomb" style="width:200px;"/>
 </a>
+</div>
+<br>
+<div align="center">
+© Cursed Entertainment 2026
 </div>
 <br>
 <div align="center">
